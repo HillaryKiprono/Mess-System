@@ -39,6 +39,16 @@
 				</a>
 			</li>
 			<li class="nav-item">
+				<a class="nav-link" href="signup.php">
+				Register
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="signup.php">
+				Register
+				</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="help.php">
 				Help
 				</a>
