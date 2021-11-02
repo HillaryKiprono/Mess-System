@@ -4,11 +4,10 @@ if(isset($_POST['submit']))
 {
     $fname=$_POST['food_name'];
     $fprice=$_POST['food_price'];
-    $fqty=$_POST['food_qty'];
+    $fqty=$_POST['qty'];
     $fcode=$_POST['food_code'];
     $filename = 'image/'.$_FILES['image']['name'];
-  
-    $sql="INSERT INTO fooditem(food_name,food_price,food_qty,food_code,image) 
+    $sql="INSERT INTO fooditem(food_name,food_price,qty,food_code,image) 
     VALUES('$fname','$fprice','$fqty','$fcode','$filename')";         
           if(mysqli_query($conn,$sql))
            {

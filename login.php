@@ -5,7 +5,7 @@ include 'config.php';
 error_reporting(0);
 
  if (isset($_SESSION['username'])) {
-    header("Location:dashboard.php");
+    header("Location:DisplayFood.php");
  }
 
 if (isset($_POST['submit'])) {
@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 		$_SESSION['username'] = $row['username'];
 		$_SESSION['email'] = $row['email'];
 		
-		header('refresh:0;url=dashboard.php');
+		header('refresh:0;url=DisplayFood.php');
 		
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";

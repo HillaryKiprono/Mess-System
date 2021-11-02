@@ -27,7 +27,7 @@ body
 
               <div class="form-group">
                   <label for="exampleInputName">quantity</label>
-                  <input type="string" class="form-control" id="Price" name="food_qty"  placeholder="Price"> 
+                  <input type="string" class="form-control" id="Price" name="qty"  placeholder="Price"> 
               </div>
 
               <div class="form-group">
@@ -37,7 +37,8 @@ body
 
               <div class="form-group">
                   <label for="exampleInputName">Upload Item Image</label>
-                  <input type="file" name="image" id="fileToUpload">              </div>  
+                  <input type="file" name="image" id="fileToUpload">              
+                </div>  
 
              <div>
               <button type="submit" name= "submit" class="btn btn-primary">Submit</button>
