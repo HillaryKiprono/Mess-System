@@ -60,11 +60,12 @@
 
 
             $curl2_post_data = [
+                include 'config.php';
                 'BusinessShortCode' => $BusinessShortCode,
                 'Password' => $password,
                 'Timestamp' => $timestamp,
                 'TransactionType' => $TransactionType,
-                'Amount' => $amount,
+                'grand_total' => $amount,
                 'PartyA' => $phone,
                 'PartyB' => $BusinessShortCode,
                 'PhoneNumber' => $phone,

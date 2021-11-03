@@ -90,7 +90,7 @@
                 <td><img src="<?= $row['image'] ?>" width="50"></td>
                 <td><?= $row['food_name'] ?></td>
                 <td>
-                  <i class="fas fa-rupee-sign"></i>&nbsp;&nbsp;<?= number_format($row['food_price'],2); ?>
+                 &nbsp;&nbsp;Ksh. <?= number_format($row['food_price'],2); ?>
                 </td>
                 <input type="hidden" class="pprice" value="<?= $row['food_price'] ?>">
                 <td>
