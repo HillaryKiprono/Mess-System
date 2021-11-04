@@ -58,7 +58,8 @@
 
             $curl2_post_data = array(
                 'BusinessShortCode' => $businessShortCode,
-                'Password' => $password,
+                // 'Password' => $password,
+              
                 'Timestamp' => $timestamp,
                 'CheckoutRequestID' => $checkoutRequestID
             );
@@ -78,7 +79,7 @@
             <div class="container-contact2-form-btn">
                 <div class="wrap-contact2-form-btn">
                     <div class="contact2-form-bgbtn"></div>
-                    <a href="index.php">
+                    <a href="logout.php">
                         <button class="contact2-form-btn">
                             Go back to the start
                         </button>

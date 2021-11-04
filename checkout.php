@@ -65,10 +65,8 @@
           <h5><b>Total Amount Payable : </b><?= number_format($grand_total,2) ?>/-</h5>
         </div> 
         <form action="" method="post" id="placeOrder">
-
-        <input type="hidden" name="products" value="<?= $allItems; ?>">
+          <input type="hidden" name="products" value="<?= $allItems; ?>">
           <input type="hidden" name="grand_total" value="<?= $grand_total; ?>">
-   
           <div class="form-group">
             <input type="text" name="name" class="form-control" placeholder="Enter Name" required>
           </div>
@@ -78,12 +76,10 @@
           <div class="form-group">
             <input type="tel" name="phone" class="form-control" placeholder="Enter Phone" required>
           </div>
-
+         
           <div class="form-group">
-            <!-- <input type="submit"  name="submit" value="Place Order"  class="btn btn-danger btn-block "header= > -->
-            <!-- <a class="nav-link" href="mpesa.php">CLICK TO PAY</a> -->
-            <input type=button name=submit onClick="parent.location='mpesa.php'" value='Place Order' class="btn btn-danger btn-block">
-
+            <!-- <input type="submit" name="submit" onclick.location.href="mpesa.php" value="Place Order" class="btn btn-danger btn-block"> -->
+            <input type=button name="submit" class="btn btn-danger btn-block" onClick="parent.location='mpesa.php'" value="Place Order">
           </div>
         </form>
       </div>

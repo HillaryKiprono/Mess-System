@@ -59,11 +59,12 @@
           <table class="table table-bordered table-striped text-center">
             <thead>
               <tr>
-                <td colspan="7">
+                <td colspan="8">
                   <h4 class="text-center text-info m-0">Food Items in your cart!</h4>
                 </td>
               </tr>
               <tr>
+                <th>food Code</th>
                 <th>ID</th>
                 <th>Image</th>
                 <th>Product</th>
@@ -85,6 +86,8 @@
                 while ($row = $result->fetch_assoc()):
               ?>
               <tr>
+              <td><?= $row['food_code'] ?></td>
+                <input type="hidden" class="foodcode" value="<?= $row['food_code'] ?>">
                 <td><?= $row['id'] ?></td>
                 <input type="hidden" class="pid" value="<?= $row['id'] ?>">
                 <td><img src="<?= $row['image'] ?>" width="50"></td>
@@ -134,6 +137,8 @@
       var pid = $el.find(".pid").val();
       var pprice = $el.find(".pprice").val();
       var qty = $el.find(".itemQty").val();
+   
+
       location.reload(true);
       $.ajax({
         url: 'action.php',
@@ -142,7 +147,8 @@
         data: {
           qty: qty,
           pid: pid,
-          pprice: pprice
+          pprice: pprice,
+        
         },
         success: function(response) {
           console.log(response);
