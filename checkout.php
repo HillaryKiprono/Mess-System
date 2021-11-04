@@ -76,10 +76,20 @@
           <div class="form-group">
             <input type="tel" name="phone" class="form-control" placeholder="Enter Phone" required>
           </div>
-         
+          <!-- <div class="form-group">
+            <textarea name="address" class="form-control" rows="3" cols="10" placeholder="Enter Delivery Address Here..."></textarea>
+          </div>
+          <h6 class="text-center lead">Select Payment Mode</h6>
           <div class="form-group">
-            <!-- <input type="submit" name="submit" onclick.location.href="mpesa.php" value="Place Order" class="btn btn-danger btn-block"> -->
-            <input type=button name="submit" class="btn btn-danger btn-block" onClick="parent.location='mpesa.php'" value="Place Order">
+            <select name="pmode" class="form-control">
+              <option value="" selected disabled>-Select Payment Mode-</option>
+              <option value="cod">Cash On Delivery</option>
+              <option value="netbanking">Net Banking</option>
+              <option value="cards">Debit/Credit Card</option>
+            </select>
+          </div> -->
+          <div class="form-group">
+            <input type="submit" name="submit" onClick="parent.location='mpesa.php'" value="Place Order" class="btn btn-danger btn-block" >
           </div>
         </form>
       </div>

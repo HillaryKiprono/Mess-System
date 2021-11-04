@@ -40,7 +40,7 @@ $(document).ready(function(){
             <ul class="list-group">
             <!-- <div class="list-group-item list-group-item-info"><a id="newCat" href="#"> Create a Food Category</a></div> -->
             <div class="list-group-item list-group-item-info"><a id="newItem" href="#"> Add a Food Item</a></div>
-            <div class="list-group-item list-group-item-info"><a id="DelCat" href="delete.php"> Delete Food Item</a></div
+            <!-- <div class="list-group-item list-group-item-info"><a id="DelCat" href="delete.php"> Delete Food Item</a></div -->
             <div class="list-group-item list-group-item-info"><a id="DelCat" href="modify.php"> View Customers order</a></div> 
             
             </div>

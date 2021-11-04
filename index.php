@@ -28,7 +28,7 @@
 	<!-- Creating a navigation bar using the
 		.navbar class of bootstrap -->
 	<nav class="navbar navbar-expand-sm bg-dark">
-    <img src="image/kibu.png" alt="" width="70" height="70">
+    <img src="image/logo" alt="" width="70" height="70">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
             <a class="nav-link" href="login.php">Login</a>
