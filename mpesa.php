@@ -1,3 +1,20 @@
+<?php
+	require 'config.php';
+
+	$grand_total = 0;
+	$allItems = '';
+	$items = [];
+
+	$sql = "SELECT CONCAT(food_name, '(',qty,')') AS ItemQty, total_price FROM cart";
+	$stmt = $conn->prepare($sql);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	while ($row = $result->fetch_assoc()) {
+	  $grand_total += $row['total_price'];
+	  $items[] = $row['ItemQty'];
+	}
+	$allItems = implode(', ', $items);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +49,10 @@
 					</span>
 
 					<div class="wrap-input2 validate-input" data-validate="Amount is required">
-						<input class="input2" type="number" name="amount">
-						<span class="focus-input2" data-placeholder="AMOUNT"></span>
+						<input type="hidden" name="grand_total" value="<?= $grand_total; ?>">
+						<!-- <input class="input2" type="number" name="amount"> -->
+						<span data-placeholder="AMOUNT"><?= number_format($grand_total,2) ?>/-</span>
+						<!-- <span class="focus-input2" data-placeholder="AMOUNT"></span> -->
 					</div>
 
 					<div class="wrap-input2 validate-input" data-validate = "Valid phone number is required: 07XXXXXXXX">

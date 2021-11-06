@@ -19,7 +19,7 @@
 <style>
         .navbar
         {
-            border:5px solid #ede247;  
+            border:5px solid #2c11f5;  
             
         }
       </style>
@@ -27,8 +27,8 @@
 
 	<!-- Creating a navigation bar using the
 		.navbar class of bootstrap -->
-	<nav class="navbar navbar-expand-sm bg-dark">
-    <img src="image/logo" alt="" width="70" height="70">
+	<nav class="navbar navbar-expand-sm bg-light">
+    <img src="logo.png" alt="" width="70" height="70">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item">
             <a class="nav-link" href="login.php">Login</a>
@@ -47,23 +47,28 @@
 		</ul>
 	</nav>
 
-	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="image/res1.jpg" alt="first slide" width="600" height="400">
+      <img class="d-block w-100" src="https://images.unsplash.com/photo-1594179047519-f347310d3322?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzdCUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="First slide" width="500" height="500">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="image/res2.jpg" alt="Second slide" width="600" height="400">
+      <img class="d-block w-100" src="image/fd2.jpg" alt="Second slide"width="500" height="500">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="image/res3.jpg" alt="third slide" width="600" height="400">
+      <img class="d-block w-100" src="image/fd3.jpg" alt="Third slide"width="500" height="500">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>

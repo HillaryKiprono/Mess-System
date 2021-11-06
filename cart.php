@@ -112,7 +112,7 @@
                     Shopping</a>
                 </td>
                 <td colspan="2"><b>Grand Total</b></td>
-                <td><b><i class="fas fa-rupee-sign"></i>&nbsp;&nbsp;<?= number_format($grand_total,2); ?></b></td>
+                <td><b>Ksh.&nbsp;&nbsp;<?= number_format($grand_total,2); ?></b></td>
                 <td>
                   <a href="checkout.php" class="btn btn-info <?= ($grand_total > 1) ? '' : 'disabled'; ?>"><i class="far fa-credit-card"></i>&nbsp;&nbsp;Checkout</a>
                 </td>

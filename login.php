@@ -42,7 +42,14 @@ if (isset($_POST['submit'])) {
 
 	<title>Login Form </title>
 </head>
+<style>
 
+body
+      {
+        background-image: url("https://images.unsplash.com/photo-1594179047519-f347310d3322?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzdCUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+      
+      }
+</style>
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">

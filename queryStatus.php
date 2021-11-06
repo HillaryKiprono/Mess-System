@@ -28,14 +28,14 @@
         <div class="wrap-contact2">
             <?php
             // Initialize the variables
-            $consumer_key = 'yeDGHxINGyH71wbLoVrgFl8L42JuvJz8';
-            $consumer_secret = 'nIcxZnslkkz4MvPz';
+            $consumer_key = 'DcFYldKougZCBkJVkq4YfiTSYfiUWWYi';
+            $consumer_secret = 'lMpyl1gGsismAgkx';
             $businessShortCode = '174379';
             $tokenUrl = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
             $queryStatusUrl = 'https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query';
             $LipaNaMpesaPasskey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
             $timestamp = date("Ymdhis");
-           // $password = base64_encode($BusinessShortCode . $LipaNaMpesaPasskey . $timestamp);
+         //   $password = base64_encode($BusinessShortCode . $LipaNaMpesaPasskey . $timestamp);
             $checkoutRequestID = $_POST['checkoutRequestID'];
 
             // Generate the auth token
@@ -58,8 +58,7 @@
 
             $curl2_post_data = array(
                 'BusinessShortCode' => $businessShortCode,
-                // 'Password' => $password,
-              
+              //  'Password' => $password,
                 'Timestamp' => $timestamp,
                 'CheckoutRequestID' => $checkoutRequestID
             );
@@ -79,7 +78,7 @@
             <div class="container-contact2-form-btn">
                 <div class="wrap-contact2-form-btn">
                     <div class="contact2-form-bgbtn"></div>
-                    <a href="logout.php">
+                    <a href="index.php">
                         <button class="contact2-form-btn">
                             Go back to the start
                         </button>

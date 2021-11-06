@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
  
   $("#Vieworder").click(function(){
-    $("#contents").load("view.php");
+    $("#contents").load("vieworders.php");
   });
 
   $("#ModifyItem").click(function(){
@@ -28,8 +28,8 @@ $(document).ready(function(){
     <div class="col-12"></div>
      
       </div>
-      <div class="row" style="height: 5%;background-color:#480673; color:#ffffff;">
-    <div class="col-10"><h3>Mess Online Food application</h3></div>
+      <div class="row" style="height: 8%;background-color:#480673; color:#ffffff;">
+    <div class="col-10"><h3>Kibu Digital Meal Application</h3></div>
     <!-- <div class="col-2"><a href="logout.php">Log Out <?php session_start(); echo $_SESSION['username'];?></a></div> -->
       </div>
        
@@ -40,8 +40,8 @@ $(document).ready(function(){
             <ul class="list-group">
             <!-- <div class="list-group-item list-group-item-info"><a id="newCat" href="#"> Create a Food Category</a></div> -->
             <div class="list-group-item list-group-item-info"><a id="newItem" href="#"> Add a Food Item</a></div>
-            <!-- <div class="list-group-item list-group-item-info"><a id="DelCat" href="delete.php"> Delete Food Item</a></div -->
-            <div class="list-group-item list-group-item-info"><a id="DelCat" href="modify.php"> View Customers order</a></div> 
+          <div class="list-group-item list-group-item-info"><a id="DelCat" href="delete.php"> Delete Food Item</a></div>
+            <div class="list-group-item list-group-item-info"><a id="DelCat" href="vieworders.php"> View Customers order</a></div> 
             
             </div>
              

@@ -36,7 +36,7 @@
             $tokenUrl = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
             $phone = $_POST['phone'];
             $lipaOnlineUrl = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
-            $amount = $_POST['amount'];
+            $amount = $_POST['grand_total'];
             $CallBackURL = 'https://2f50f430.ngrok.io/callback.php?key=Your$trongPssWard';
             $timestamp = date("Ymdhis");
             $password = base64_encode($BusinessShortCode . $LipaNaMpesaPasskey . $timestamp);
@@ -69,7 +69,7 @@
                 'PartyB' => $BusinessShortCode,
                 'PhoneNumber' => $phone,
                 'CallBackURL' => $CallBackURL,
-                'AccountReference' => 'Test',
+                'AccountReference' => 'Hillary',
                 'TransactionDesc' => 'Test',
             ];
 
@@ -84,7 +84,7 @@
             $curl2_response = json_decode(curl_exec($curl2));
 
             echo json_encode($curl2_response, JSON_PRETTY_PRINT);
-            ?>
+            ?>  
             <form class="contact2-form validate-form" action="queryStatus.php" method="post">
                 <input type="hidden" name="checkoutRequestID" value="<?php echo $curl2_response->CheckoutRequestID ?>">
                 <div class="container-contact2-form-btn">
