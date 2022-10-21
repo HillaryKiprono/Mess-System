@@ -1,5 +1,8 @@
 "# lipa-na-mpesa-online" 
 
-A simple project showing the use of the Lipa na Mpesa ONline API
+This is my third year simple project showing the use of the Lipa na Mpesa ONline API
+In a web application 
 
-A complete step by step guide on how to achieve this can be found on my blog: https://rahamstips.wordpress.com/2019/08/08/lipa-na-m-pesa-online-api-a-hack-youll-wish-you-knew/
+How to integrate lipa na mpesa stk push follow my article...
+
+"How to Integrate Lipa na Mpesa in PHP | Engineering Education (EngEd) Program | Section" https://www.section.io/engineering-education/how-to-integrate-lipa-na-mpesa-in-php/
